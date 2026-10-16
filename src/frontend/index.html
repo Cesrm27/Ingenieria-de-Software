@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Farmacia Demo · Prototipo académico</title><link rel="stylesheet" href="styles.css"></head><body>
+<header><div><strong>✚ FARMACIA DEMO</strong><small> Prototipo académico no oficial · Datos ficticios</small></div><span>Ingeniería de Software · Kanban</span></header>
+<main><section class="intro"><h1>Gestión de ventas, recojo e inventario</h1><p>Demostración local. No utiliza cuentas, pagos ni datos reales.</p></section>
+<div class="metrics" id="metrics"></div>
+<nav aria-label="Secciones"><button data-tab="ventas" class="active">Ventas</button><button data-tab="pedidos">Pedidos de recojo</button><button data-tab="inventario">Inventario</button></nav>
+<section id="ventas" class="panel"><h2>Ventas</h2><div class="controls"><label>Producto <select id="producto"></select></label><label>Cantidad <input id="cantidad" type="number" min="1" value="1"></label><button id="vender">Registrar venta simulada</button></div><p id="mensajeVenta" role="status"></p><h3>Últimas ventas (esta sesión)</h3><div id="historialVentas"></div></section>
+<section id="pedidos" class="panel hidden"><h2>Recojo de pedidos</h2><div class="controls"><label>Producto <select id="productoPedido"></select></label><label>Cantidad <input id="cantidadPedido" type="number" min="1" value="1"></label><button id="crearPedido">Crear pedido</button></div><p id="mensajePedido" role="status"></p><div id="listaPedidos"></div></section>
+<section id="inventario" class="panel hidden"><h2>Inventario</h2><p>Stock, reserva y disponibilidad del ejemplo. La entrada de stock es una simulación sin control de roles.</p><div id="tablaInventario"></div></section>
+<footer>Solo demostración del flujo de interfaz. Implementación de seguridad, API y transacciones: pendiente.</footer>
+</main><script src="app.js"></script></body></html>
